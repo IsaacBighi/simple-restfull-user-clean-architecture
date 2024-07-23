@@ -18,6 +18,7 @@
 - Prisma
 - SQLite
 - Express
+- Bcrypt
 
 <h2 id="started">🚀 Getting started</h2>
 <h3>Prerequisites</h3>
@@ -79,7 +80,8 @@ If you don't change the port in the server.ts file, it will start at port 3000 b
 {
   "id": "1234doajd-dapowjda-dapojdda",
   "name": "John Doe 1",
-  "email": "JohnDoe1@gmail.com"
+  "email": "JohnDoe1@gmail.com",
+  "password": "$2b$10$.TMNa7xniHcFp00aOjPgfOVLYaN/l5mV/ziL7u79IZohEJ/ITsC96"
 }
 ```
 
