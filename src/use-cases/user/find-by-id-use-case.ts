@@ -9,6 +9,7 @@ interface FindUserByIdUseCaseOutput {
   id: string;
   name: string;
   email: string;
+  password: string;
 }
 
 export class FindUserByIdUseCase
@@ -27,6 +28,7 @@ export class FindUserByIdUseCase
       id: user.id.value,
       name: user.name,
       email: user.email,
+      password: user.password,
     };
   }
 }
