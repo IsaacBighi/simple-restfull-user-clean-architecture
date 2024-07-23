@@ -53,7 +53,7 @@ If you don't change the port in the server.ts file, it will start at port 3000 b
 | <kbd>GET /users/:id</kbd>     | It will show you the information of a specific user. [response details](#get-/users/:id)
 | <kbd>POST /users</kbd>        | Creating a user. [request details](#post/users)
 | <kbd>PUT /users/:id</kbd>     | Update a user. [request details](#put-users/:id)
-| <kbd>Delete /users/:id</kbd>  | Delete a user. [response details](#delete-users/:id)
+| <kbd>Delete /users/:id</kbd>  | Delete a user. 
 
 
 <h3 id="get-/users">Get /users</h3>
