@@ -19,6 +19,7 @@
 - SQLite
 - Express
 - Bcrypt
+- cookie-parser
 
 <h2 id="started">🚀 Getting started</h2>
 <h3>Prerequisites</h3>
