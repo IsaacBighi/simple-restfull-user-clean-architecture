@@ -1,7 +1,7 @@
 import { IUserRepository } from '@/domain/repositories/user-repository';
 import { UseCase } from '../use-case';
 import { User } from '@/domain/entities/user';
-import { IpasswordHasher } from '@/services/interfaces/password-hasher/interface';
+import { IbrcryptService } from '@/services/interfaces/bcrypt/interface';
 
 interface CreateUserUseCaseInput {
   name: string;
@@ -18,7 +18,7 @@ export class CreateUserUseCase
 {
   constructor(
     private readonly userRepository: IUserRepository,
-    private readonly bcrypt: IpasswordHasher,
+    private readonly bcrypt: IbrcryptService,
   ) {}
 
   async execute(

@@ -45,16 +45,19 @@ npm run start
 ```
 
 <h3>Api endpoints</h3>
-If you don't change the port in the server.ts file, it will start at port 3000 by default 
+If you don't change the port in the server.ts file, it will start at port 3000 by default
 
 
-| route               | description     
+| route               | description
 | --------------------|---------------------
 | <kbd>GET /users</kbd>         | It will show you an array with all created users. [response details](#get-/users)
 | <kbd>GET /users/:id</kbd>     | It will show you the information of a specific user. [response details](#get-/users/:id)
-| <kbd>POST /users</kbd>        | Creating a user. [request details](#post/users)
+| <kbd>POST /users</kbd>        | Creating a user. [request details](#post-/users)
 | <kbd>PUT /users/:id</kbd>     | Update a user. [request details](#put-users/:id)
-| <kbd>Delete /users/:id</kbd>  | Delete a user. 
+| <kbd>Delete /users/:id</kbd>  | Delete a user.
+| <kbd>Post /login</kbd>        | Login of user. [response details](#post-/login)
+| <kbd>Get /protected</kbd>     | Simple route to test login.
+| <kbd>Get /logout</kbd>        | Logout of user.
 
 
 <h3 id="get-/users">Get /users</h3>
@@ -103,5 +106,15 @@ If you don't change the port in the server.ts file, it will start at port 3000 b
 {
   "name": "John Doe 4",
   "email": "JohnDoe3@gmail.com",
+}
+```
+
+<h3 id="#post-/login">Post /login</h3>
+
+**RESPONSE**
+```JSON
+{
+  "email": "John Doe 1",
+  "password": "JohnDoe123"
 }
 ```

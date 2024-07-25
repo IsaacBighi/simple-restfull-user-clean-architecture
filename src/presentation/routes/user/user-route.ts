@@ -16,7 +16,9 @@ import { UpdateUserController } from '@/presentation/controllers/user/update-con
 //delelte
 import { DeleteUserUseCase } from '@/use-cases/user/delete-use-case';
 import { DeleteUserController } from '@/presentation/controllers/user/delete-controller';
-import { BcryptPasswordHasher } from '@/services/implementations/password-hasher/bcrypt-password-hasher';
+
+//services
+import { BcryptService } from '@/services/implementations/bcrypt/bcrypt-service';
 
 const userRoute = Router();
 const userRepository = new PrismaUserRepository(prisma);
@@ -36,7 +38,7 @@ userRoute.get('/users', (req, res) => findAllUsersController.handle(req, res));
 //create
 const createUserUseCase = new CreateUserUseCase(
   userRepository,
-  new BcryptPasswordHasher(),
+  new BcryptService(),
 );
 const createUserController = new CreateUserController(createUserUseCase);
 userRoute.post('/users', (req, res) => createUserController.handle(req, res));
